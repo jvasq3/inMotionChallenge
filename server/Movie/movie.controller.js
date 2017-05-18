@@ -2,8 +2,6 @@
 
 const MovieModel = require('../mongooseSchemas/Movie');
 const ObjectId = require('mongoose').Types.ObjectId;
-const deepQuerySearch = require('../utils/mongo.utils').deepQuerySearch;
-
 class MovieCtrl {
 
   create(req, res) {
