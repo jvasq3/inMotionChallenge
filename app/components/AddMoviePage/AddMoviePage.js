@@ -41,6 +41,7 @@ class AddMoviePage extends Component {
   }
 
   _updateState(key, value){
+    //TODO validation
     this.setState({[key] : value});
   }
 
@@ -79,11 +80,10 @@ class AddMoviePage extends Component {
                 addClasses='col-xs-3'
                 onBlur={e => {this._updateState('year', e.target.value)}}/>
                 <Dropdown onChange={e => {this._updateState('genre', e.target.value)}}
-                          addClasses='col-xs-4'
-                          options={Dictionary.genres}
-                          labelName='Genre'
-                          defaultValue={this.state.genre}/>
-
+                  addClasses='col-xs-4'
+                  options={Dictionary.genres}
+                  labelName='Genre'
+                  defaultValue={this.state.genre}/>
           </div>
           <div className='row'>
             <Dropdown onChange={e => {this._updateState('rating', e.target.value)}}
