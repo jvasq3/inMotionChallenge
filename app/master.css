@@ -1,0 +1,181 @@
+
+html {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: #3F4347;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #e4e4e4;
+    font-size: 36px;
+    margin: 20px 20px 10px 20px;
+}
+
+.h1-override{
+    margin: 10px;
+    color: white;
+    font-weight: 300;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 30px;
+}
+
+h3 {
+    color: #e4e4e4;
+    font-size: 18px;
+    margin:20px;
+}
+
+label {
+    font-weight: 400;
+}
+
+.HomePage-container{
+  margin: auto;
+}
+
+.ListTable{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200 !important;
+    font-size: 16px;
+    padding: 0 0 0 15px;
+}
+
+.ListTable thead{
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+}
+
+.ListTable td{
+    padding-left: 10px;
+    vertical-align: top;
+}
+.ListTable th{
+    padding-left: 10px;
+}
+
+.ListTable thead th{
+    font-weight: 300 !important;
+}
+
+.ListTable thead tr th:last-child{
+    text-align: right;
+}
+
+.ListTable th:last-child{
+    padding-left: 140px !important;
+}
+
+.ListTable tbody tr:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.ListTable tbody tr td:last-child{
+    text-align: right;
+}
+
+
+/************ home ************/
+
+.HomePage-container{
+}
+.tab{
+  display: inline-block;
+  cursor: pointer;
+  width: 108px;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: black;
+}
+.add-tab{
+  display: inline-block;
+  cursor: pointer;
+  width: 108px;
+  padding: 15px;
+  background-color: #F3ec00;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+.Header-container{
+  margin-top: 100px;
+  border-bottom: 1px solid white;
+  margin-bottom: 25px;
+}
+
+/******** search *********/
+.searchButton{
+  background-color: #3f4347;
+  border: 2px solid #e4e4e4;
+  height: 60px;
+  line-height: 55px;
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 200;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/******** add movie ********/
+.addMovie-input-container{
+  margin: auto;
+
+}
+
+.actor{
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 160px;
+  height: 30px;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.fa{
+  float: right;
+  padding-left: 10px;
+  display: inline-flex;
+}
+
+.addActors{
+  margin: 25px 15px 25px;
+}
+
+.label{
+  color: white
+
+}
+
+#addedActors{
+  margin-left: 0 !important;
+}
+
+#ratingSpan{
+  color: white;
+}
