@@ -1,6 +1,3 @@
-/* jshint node: true */
-/* jshint esversion: 6 */
-
 'use strict';
 /***************************** BEGIN Import Libraries *****************************/
 const restify = require('restify');
@@ -19,7 +16,6 @@ const server = new restify.createServer();
 /***************************** BEGIN Mongoose Configuration *****************************/
 mongoose.connect(config.mongo.uri, config.mongo.options);
 const db = mongoose.connection;
-//console.error.bind(console, 'my message') allows console log as callback
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
   const seedDB = config.seedDB == "true";
@@ -32,7 +28,6 @@ db.once('open', () => {
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
-server.use(restify.CORS());
 server.use(require("webpack-hot-middleware")(compiler));
 
 // set up static file routes
@@ -74,7 +69,7 @@ server.get({ name: 'index', path: /^\/(?!api)(?!internal).*/ }, serveStatic);
 
 
 // start up server
-const port = process.env.NODE_PORT || 9091;
+const port = 9091;
 server.listen(port, function () {
   console.log('%s listening at %s', server.name, server.url);
 });

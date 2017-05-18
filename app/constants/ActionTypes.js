@@ -1,6 +1,4 @@
 module.exports = {
-  INITIALIZE: 'INITIALIZE',
-  INITIALIZE_DATA: 'INITIALIZE DATA',
   /** Movie Actions **/
   GET_MOVIES: 'GET MOVIES',
   QUERY_MOVIES: 'QUERY MOVIES',
